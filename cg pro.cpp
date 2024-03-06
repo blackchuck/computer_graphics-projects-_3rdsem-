@@ -1,8 +1,41 @@
 #include <conio.h>
 #include <dos.h>
 #include <graphics.h>
+/*
+
+
+        PROJECT TITLE:Creating a  bird and makde it to fly from left to right
+	NAME:ROSHAN JUNG KUNWAR
+	STUDENT ID:ACE078BEI038
+        DEPARTMENT:ELECTRONICS AND COMPUTER ENGINEERING
+	FACULTY:ELECTRONIC,COMMUNICATION AND INFORMATION[BEI]
+	DATE OF SUBMISSION:2080-11-23
+	PROJECT:COMPUTER GRAPHICS PROJECT FOR FOURTH SEMEMSTER(BATCH-2078)
+        LAB INSTRUCTOR:Er.RAMESH SHARMA	
+    
+    colour code numerical value:
+    0.black
+    1.blue
+    2.green
+    3.cyan
+    4.red
+    5.magneta
+    6.brown
+    7.light gray
+    8.dark gray
+    9.light blue
+    10.light green
+    11.light cyan
+    12.light red
+    13.light magneta
+    14.yellow
+    15.white
+    
+	
+*/
 void handDown(int i)
 {
+    
     line(85 + i, 155, 45 + i, 185);
     line(85 + i, 155, 115 + i, 195);
     arc(90 + i, 130, 228, 292, 70);
@@ -47,7 +80,7 @@ int main()
         else
             handDown(i);
 
-        // Stop the screen for 10 ms (not 10 seconds)
+        // Stop the screen for 10 ms
         delay(3);
 
         // Clear the screen
